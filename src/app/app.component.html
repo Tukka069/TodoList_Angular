@@ -1,0 +1,39 @@
+<ng-toast></ng-toast>
+<div class="outer">
+  <h2>To-Do List</h2>
+  <div class="outer">
+    <label for="newTask">New task title:</label>
+    <input type="text" id="newTask" [(ngModel)]="newTask" maxlength="24">
+    <label for="newTask">Description:</label>
+    <input type="text" id="newDesc" [(ngModel)]="newDesc">
+    <button class="btnTask" (click)="addTask()">Add Task</button>
+  </div>
+
+  <div *ngIf="tasks.length > 0" class="outer">
+    <label for="listTasks">List of tasks:</label>
+    <ul>
+      <li *ngFor="let task of tasks; let i = index">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <input type="checkbox" [checked]="task.completed" (change)="markAsCompleted(task, $event)">
+              {{ task.title }}
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+              <button class="btn btn-primary btnDetails" *ngIf="!detailsState[i]" (click)="openDetails(i)">Details</button>
+              <button class="btn btn-danger btnClose" *ngIf="detailsState[i]" (click)="closeDetails(i)">Close</button>
+              <button class="btn btn-warning btnDelete" (click)="deleteTask(task)">Delete</button>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="outer" *ngIf="detailsState[i]">{{ task.description }}</div>
+            </div>
+          </div>
+        </div>
+        
+      </li>      
+    </ul>
+  </div>
+</div>
+

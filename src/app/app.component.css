@@ -1,0 +1,108 @@
+
+div.outer {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .btnTask {
+    background-color: rgb(139, 139, 235);
+    color: #fff;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .btnTask:hover {
+    background-color: white;
+    color: rgb(139, 139, 235);
+  }
+  
+  .btnDetails {
+    background-color: #69db7c;
+    color: #fff;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .btnDetails:hover {
+    background-color: white;
+    color: #69db7c;
+  }
+
+  .btnClose {
+    background-color: #e455e4;
+    color: #fff;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .btnClose:hover {
+    background-color: white;
+    color: #e455e4;
+  }
+
+  .btnDelete {
+    background-color: #ff8787;
+    color: #fff;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 10px;
+
+  }
+  
+  .btnDelete:hover {
+    background-color: white;
+    color: #ff8787;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+
+  
+  
